@@ -1,0 +1,12 @@
+version: '3'
+services:
+  admin:
+    image: hardelele/admin-service:latest
+    restart: on-failure
+    ports:
+      - "9003:9003"
+  client:
+    image: hardelele/client-service:latest
+    restart: on-failure
+    ports:
+      - "8080:8080"
